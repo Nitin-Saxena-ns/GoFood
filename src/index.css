@@ -5,9 +5,46 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* background: #000 !important;
+  text-decoration-color: aliceblue !important; */
+  /* font-family: 'onlinewebfonts' !important */
+  /* font-family: "Sofia", sans-serif; */
 }
 
+.divider:after,
+.divider:before {
+content: "";
+flex: 1;
+height: 1px;
+background: #eee;
+}
+.h-custom {
+height: calc(100% - 73px);
+}
+@media (max-width: 450px) {
+.h-custom {
+height: 100%;
+}
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.font-link {
+  font-family: "Sofia", sans-serif;
+}
+#carousel{
+  max-height: 500px;
+  object-fit: cover;
+  object-position: center;
+  height: 100vh;
+  overflow: hidden;
+}
+.cascading-right {
+  margin-right: -50px;
+}
+
+@media (max-width: 991.98px) {
+.cascading-right {
+  margin-right: 0;
+}}
